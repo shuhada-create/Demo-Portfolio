@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuhada | Web Developer & Digital Strategist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',
+                            card: '#1E293B',
+                            accent: '#2563EB',
+                            cyan: '#06B6D4',
+                            light: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Fira Code', monospace; }
+        .gradient-text {
+            background: linear-gradient(135deg, #06B6D4 0%, #2563EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-300 antialiased selection:bg-brand-cyan selection:text-slate-900">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-cyan code-font">&lt;</span>Shuhada<span class="text-brand-cyan code-font">/&gt;</span>
+                <span class="hidden sm:inline text-xs bg-slate-800 text-brand-cyan px-2.5 py-1 rounded-full font-mono font-normal border border-slate-700">Dev & SEO</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-brand-cyan transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-cyan transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#skills" class="hover:text-brand-cyan transition-colors">Skills</a>
+                <a href="#portfolio" class="hover:text-brand-cyan transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-brand-cyan transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-accent to-brand-cyan rounded-lg shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02] transition-all">
+                    Get a Quote
+                </a>
+                <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden text-slate-300 hover:text-white p-2 text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card/95 border-b border-slate-800 px-4 pt-4 pb-6 space-y-3 transition-all">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">Home</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">About</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">Services</a>
+            <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">Skills</a>
+            <a href="#portfolio" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">Portfolio</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-brand-cyan">Contact</a>
+            <a href="#contact" class="mobile-nav-link block text-center w-full mt-4 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-accent to-brand-cyan rounded-lg">Get a Quote</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="home" class="min-h-[calc(100vh-80px)] flex items-center relative overflow-hidden py-16 lg:py-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-mono text-brand-cyan">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Freelance & Project Work
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        High-Performance Websites and <span class="gradient-text">Strategic Digital Solutions</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        I'm <strong class="text-white">Shuhada</strong>, a Full-Stack Web Developer and Digital Strategist. I deliver tailored, performance-focused websites, conversion-optimised landing pages, and end-to-end e-commerce solutions engineered with technical SEO and maintainable code to drive measurable business results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#services" class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-brand-accent to-brand-cyan rounded-lg shadow-lg hover:shadow-cyan-500/25 transition-all text-center">
+                            Explore Services
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg transition-all text-center">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Web Development Workspace" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5">
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web Developer Workspace" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 space-y-6">
+                        <h2 class="text-xs font-mono text-brand-cyan tracking-widest uppercase">About Shuhada</h2>
+                        <h3 class="text-3xl sm:text-4xl font-bold text-white">Merging modern web architecture with data-driven growth.</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            With years of hands-on experience in full-stack web development and search engine optimization, I build web solutions tailored to drive real business growth. Whether you are launching an online store, building a personal brand, or optimizing search rankings on Google, every project is built with clean code and high performance standards.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-brand-card border border-slate-800">
+                                <span class="block text-3xl font-extrabold text-brand-cyan">100%</span>
+                                <span class="text-sm text-slate-400 font-medium">Mobile Responsive</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-brand-card border border-slate-800">
+                                <span class="block text-3xl font-extrabold text-brand-accent">SEO</span>
+                                <span class="text-sm text-slate-400 font-medium">Search Ready Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs font-mono text-brand-cyan tracking-widest uppercase">Core Offerings</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Services Provided</h3>
+                    <p class="text-slate-400">Tailored, end-to-end web development and marketing capabilities designed to achieve your strategic digital goals.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-brand-cyan/50 transition-all hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-cyan group-hover:text-slate-900 transition-all">
+                            <i class="fa-solid fa-address-card"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Portfolio Websites</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Custom personal branding sites engineered for creative professionals, freelancers, and executives to showcase projects and attract top clients.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i> Interactive Case Studies</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i> Fast-Loading Assets</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-brand-accent/50 transition-all hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Business Landing Pages</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">High-converting sales and product landing pages designed around human psychology, clear call-to-actions, and pixel-perfect responsiveness.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Optimized Lead Generation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> A/B Testing Friendly</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-900 transition-all">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">E-Commerce Solutions</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Complete online store setups using Shopify, WooCommerce, or custom tech stacks featuring payment gateway integration and smooth cart checkout flows.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Secure Payment Processing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Inventory Management UI</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Social Media Marketing</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Brand strategy, graphic creation, and organic setup across major platforms to drive engaged traffic straight to your custom landing pages.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Platform Branding</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Targeted Conversion Funnels</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-card p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all hover:-translate-y-1 group">
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition-all">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Google SEO Optimization</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive on-page and technical SEO improvements, schema markup, and speed tuning to ensure your site reaches Google Page 1.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Technical Core Web Vitals</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Structured Data & Meta Tagging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-slate-900/50 border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs font-mono text-brand-cyan tracking-widest uppercase">Tech Stack</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Technical Skills</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                        <h4 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-code text-brand-cyan"></i> Frontend Stack
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">HTML5</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">CSS3</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">JavaScript (ES6+)</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Tailwind CSS</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">React</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                        <h4 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-server text-brand-accent"></i> Backend & CMS
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Node.js</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">PHP</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">WordPress</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Shopify</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Elementor</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                        <h4 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-chart-pie text-emerald-400"></i> SEO & Tools
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Google Search Console</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Google Analytics</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Lighthouse Optimization</span>
+                            <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-700">Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                    <h2 class="text-xs font-mono text-brand-cyan tracking-widest uppercase">Portfolio</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Featured Projects</h3>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-2 mb-12">
+                    <button class="filter-btn active px-4 py-2 rounded-lg text-xs font-medium bg-brand-cyan text-slate-900 font-semibold" data-filter="all">All</button>
+                    <button class="filter-btn px-4 py-2 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="landing">Landing Pages</button>
+                    <button class="filter-btn px-4 py-2 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-btn px-4 py-2 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="portfolio">Portfolios</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="portfolio-item bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all" data-category="ecommerce">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80" alt="E-commerce Store Preview" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs font-mono text-brand-cyan uppercase">E-Commerce</span>
+                            <h4 class="text-xl font-bold text-white">Aura Apparel Store</h4>
+                            <p class="text-slate-400 text-sm">Shopify online store with integrated payment gateway, responsive design, and Google SEO setup.</p>
+                            <button onclick="openModal('Aura Apparel Store', 'Full storefront design with payment processing, responsive inventory display, and top-tier SEO optimizations.', 'Shopify, Liquid, CSS3')" class="text-sm font-semibold text-brand-cyan hover:underline inline-flex items-center gap-1">
+                                View Case Study <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all" data-category="landing">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="SaaS Landing Page Preview" class="w-full h-48 object-cover">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs font-mono text-brand-accent uppercase">Landing Page</span>
+                            <h4 class="text-xl font-bold text-white">NextGen Analytics Landing</h4>
+                            <p class="text-slate-400 text-sm">A fast SaaS product landing page designed to capture leads and showcase product analytics.</p>
+                            <button onclick="openModal('NextGen Analytics Landing', 'Built for high lead conversions with Tailwind CSS, embedded analytics previews, and interactive CTAs.', 'HTML5, Tailwind CSS, JavaScript')" class="text-sm font-semibold text-brand-cyan hover:underline inline-flex items-center gap-1">
+                                View Case Study <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all" data-category="portfolio">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Creative Portfolio Preview" class="w-full h-48 object-cover">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs font-mono text-purple-400 uppercase">Portfolio</span>
+                            <h4 class="text-xl font-bold text-white">Architectural Agency Site</h4>
+                            <p class="text-slate-400 text-sm">Minimalist portfolio with interactive filters, smooth scroll animations, and dark aesthetics.</p>
+                            <button onclick="openModal('Architectural Agency Site', 'Clean portfolio showcasing architectural projects with gallery filtering and modal previews.', 'React, Tailwind CSS')" class="text-sm font-semibold text-brand-cyan hover:underline inline-flex items-center gap-1">
+                                View Case Study <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-slate-900/50 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <h2 class="text-xs font-mono text-brand-cyan tracking-widest uppercase mb-2">Inquiries</h2>
+                            <h3 class="text-3xl font-bold text-white">Let's build your next digital project.</h3>
+                            <p class="text-slate-400 mt-4 leading-relaxed">
+                                Ready to launch a website, set up an e-commerce store, or rank on Google? Fill out the contact form or send a message directly.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-card border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-brand-cyan/10 text-brand-cyan flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-500 font-mono">Direct Email</span>
+                                    <p class="text-white font-medium text-sm">shuhada.dev@example.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-card border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-500 font-mono">Location</span>
+                                    <p class="text-white font-medium text-sm">Available Worldwide (Remote Work)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4 pt-2">
+                            <a href="#" aria-label="GitHub Profile" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-brand-cyan hover:text-slate-900 text-slate-300 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn Profile" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-brand-cyan hover:text-slate-900 text-slate-300 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-linkedin-in text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter Profile" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-brand-cyan hover:text-slate-900 text-slate-300 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-x-twitter text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-brand-card p-8 rounded-2xl border border-slate-800">
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">YOUR NAME</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-2">YOUR EMAIL</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono text-slate-400 mb-2">SERVICE REQUESTED</label>
+                                <select class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan">
+                                    <option>Custom Portfolio Website</option>
+                                    <option>Business Landing Page</option>
+                                    <option>E-Commerce Solutions</option>
+                                    <option>Social Media Marketing (SMM)</option>
+                                    <option>Google SEO Optimization</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono text-slate-400 mb-2">PROJECT DETAILS</label>
+                                <textarea rows="4" required placeholder="Describe your project goals, timelines, or requirements..." class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-accent to-brand-cyan rounded-lg shadow-lg hover:shadow-cyan-500/20 transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark py-8 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">&copy; 2026 Shuhada. All rights reserved.</p>
+            <a href="#home" class="text-xs text-brand-cyan hover:underline flex items-center gap-1 font-mono">
+                Back to Top <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-brand-card max-w-lg w-full rounded-2xl p-6 border border-slate-800 relative shadow-2xl">
+            <button onclick="closeModal()" aria-label="Close modal" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-2"></h3>
+            <p id="modal-desc" class="text-slate-400 text-sm mb-4 leading-relaxed"></p>
+            <div class="mb-6">
+                <span class="text-xs font-mono text-slate-500 block mb-1">TECH STACK:</span>
+                <span id="modal-tech" class="text-xs text-brand-cyan font-mono"></span>
+            </div>
+            <button onclick="closeModal()" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg text-sm">Close Preview</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Drawer Toggle Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // Portfolio Category Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-cyan', 'text-slate-900', 'font-semibold');
+                    b.classList.add('bg-slate-800', 'text-slate-300');
+                });
+                btn.classList.remove('bg-slate-800', 'text-slate-300');
+                btn.classList.add('bg-brand-cyan', 'text-slate-900', 'font-semibold');
+
+                const filter = btn.getAttribute('data-filter');
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Interactive Modal Logic
+        const modal = document.getElementById('project-modal');
+        function openModal(title, desc, tech) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('modal-tech').innerText = tech;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Form Submit Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! Shuhada will get back to you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
